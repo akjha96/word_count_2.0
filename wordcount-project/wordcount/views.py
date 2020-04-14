@@ -28,3 +28,9 @@ def result(request):
     max_used = max_used_item[1]
     return render(request, "result.html", {'sentence': sentence, 'length_of_sentence': length_of_sentence,
                                            "max_used_word": max_used_word, 'max_used': max_used})
+
+
+def about(request):
+    author = 'ANAND KUMAR JHA'
+    skill_level = 'Very High'
+    return render(request, 'about.html', {'author': author, 'skill_level': skill_level})
